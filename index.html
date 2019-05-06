@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marvel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="index.js" async></script>
+</head>
+<body>
+    <header>
+        <div id="myNavBar" class="topnav">
+            <nav>
+                <a href="index.html">
+                    <img class="logo"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/1200px-MarvelLogo.svg.png"
+                            alt="Imagem Marvel">
+                </a>
+                <a class="topnav-button" href="comics.html">Comics</a>
+                <a class="topnav-button" href="artbooks.html">ArtBooks</a>
+                <a class="topnav-button" href="trailers.html">Trailers</a>
+                <a class="topnav-button" href="about.html">About Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="responseNavBar()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <div style="height:70px;"></div>
+
+    <div class="title-lables">
+        <h3 class="title-lables">Trending</h3>
+    </div>
+    <a onclick="previousSlide()" href="javascript:void();" class="slideshow-button previous">&#8249;</a>
+    <a onclick="nextSlide()" href="javascript:void();" class="slideshow-button next">&#8250;</a>
+    <div class="slider-container">
+        <div id="img-container" class="image-container">
+            <img src="https://movieposterhd.com/wp-content/uploads/2019/03/Wallpapers-Avengers-Endgame.jpg" 
+            id="img-1" alt="Erro." class="slider-image"
+            style="margin-top: -20;">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91m93WxLsCL.jpg"
+            id="img-2" alt="Erro." class="slider-image"
+            style="margin-top: -25px;">
+            <img src="https://mcucosmic.com/wp-content/uploads/2019/01/spider-man-far-from-home-poster-top-1024x562.jpg" 
+            id="img-3" alt="Erro." class="slider-image"
+            style="margin-top: -50px;">
+        </div>
+
+    </div>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <button type="button" class="btn btn-secondary">3</button>
+            <button type="button" class="btn btn-secondary">4</button>
+        </div>
+    </div>
+    <br><br><br><br>
+</body>
+</html>
