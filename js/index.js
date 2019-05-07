@@ -26,7 +26,7 @@ var myTimer = setInterval(function rollSlide(){
 
 //Função passa pro próximo slide
 function nextSlide(){
-
+    console.log(slideIndex);
     //Verifica se o index de imagem está no range correto e resseta se estourar
     if (slideIndex >= slides.length){
         slideIndex = 0;
@@ -46,6 +46,7 @@ function nextSlide(){
 }
 
 function previousSlide(){
+    console.log(slideIndex);
     if (slideIndex == 0){
         //Seta a posição do container com relação ao index do slide
         container_position.style.left = (-1000*(slides.length-1)) + "px";
