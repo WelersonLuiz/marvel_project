@@ -51,6 +51,8 @@ function previousSlide(){
         //Seta a posição do container com relação ao index do slide
         container_position.style.left = (-1000*(slides.length-1)) + "px";
         slideIndex = slides.length;
+        
+        //Incrementa o slide;
         slideIndex--;
     }else{
         //Seta a posição do container com relação ao index do slide
