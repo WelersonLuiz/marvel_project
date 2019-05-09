@@ -8,7 +8,7 @@ function responsiveNavBar() {
 }
 
 //Inicialização da variável slideIndex
-var slideIndex = 0;
+var slideIndex = 1;
 
 //Recebe o numero de slides
 var slides = document.getElementsByClassName("slider-image");
@@ -22,7 +22,7 @@ document.getElementById("img-container").style.width = slides.length*1000+"px";
 //Timer passando os slides a cada 5 segundos
 var myTimer = setInterval(function rollSlide(){    
     nextSlide();
-    }, 7000);
+    }, 5000);
 
 //Função passa pro próximo slide
 function nextSlide(){
