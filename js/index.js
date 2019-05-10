@@ -1,14 +1,5 @@
-function responsiveNavBar() {
-    var nav = document.getElementById("myNavBar");
-    if (nav.className === "topnav") {
-        nav.className += "responsive";
-    } else {
-        nav.className = "topnav";
-    }
-}
-
 //Inicialização da variável slideIndex
-var slideIndex = 0;
+var slideIndex = 1;
 
 //Recebe o numero de slides
 var slides = document.getElementsByClassName("slider-image");
@@ -22,11 +13,10 @@ document.getElementById("img-container").style.width = slides.length*1000+"px";
 //Timer passando os slides a cada 5 segundos
 var myTimer = setInterval(function rollSlide(){    
     nextSlide();
-    }, 7000);
+    }, 5000);
 
 //Função passa pro próximo slide
 function nextSlide(){
-    console.log(slideIndex);
     //Verifica se o index de imagem está no range correto e resseta se estourar
     if (slideIndex >= slides.length){
         slideIndex = 0;
@@ -46,7 +36,6 @@ function nextSlide(){
 }
 
 function previousSlide(){
-    console.log(slideIndex);
     if (slideIndex == 0){
         //Seta a posição do container com relação ao index do slide
         container_position.style.left = (-1000*(slides.length-1)) + "px";
