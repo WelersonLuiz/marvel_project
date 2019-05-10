@@ -9,28 +9,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/index.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/navbar.js"></script>
 </head>
 <body>
     <header>
-        <div id="myNavBar" class="topnav">
-            <nav>
-                <a href="index.html">
-                    <img class="logo"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/1200px-MarvelLogo.svg.png"
-                            alt="Imagem Marvel">
-                </a>
-                <a class="topnav-button" href="comics.html">Comics</a>
-                <a class="topnav-button" href="artbooks.html">ArtBooks</a>
-                <a class="topnav-button" href="trailers.html">Trailers</a>
-                <a class="topnav-button" href="about.html">About Us</a>
-                <a href="javascript:void(0);" class="icon" onclick="responseNavBar()">
-                  <i class="fa fa-bars"></i>
-                </a>
+        <div>
+            <nav id="myNavBar" class="topnav">
+                <div id="navButtons">
+                    <a href="index.html">
+                        <img class="logo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/1200px-MarvelLogo.svg.png"
+                                alt="Imagem Marvel">
+                    </a>
+                    <a class="topnav-button" href="comics.html">Comics</a>
+                    <a class="topnav-button" href="artbooks.html">ArtBooks</a>
+                    <a class="topnav-button" href="trailers.html">Trailers</a>
+                    <a class="topnav-button" href="about.html">About Us</a>
+                    <a href="javascript:void(0);" class="listIcon" onclick="navDropdown()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </nav>
+            <div id="dropdown" style="display:none;">
+                <a class="topnav-button" href="comics.html">Comics</a><br>
+                <a class="topnav-button" href="artbooks.html">ArtBooks</a><br>
+                <a class="topnav-button" href="trailers.html">Trailers</a><br>
+                <a class="topnav-button" href="about.html">About Us</a><br>
+            </div>
         </div>
     </header>
     <div style="height:70px;"></div>
-
 </body>
 </html>

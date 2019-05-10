@@ -7,35 +7,73 @@
     <title>Marvel</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/index.css" type="text/css">
+    <link rel="stylesheet" href="/css/comics.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/navbar.js" async></script>
+    <script type="text/javascript" src="/js/comics_slide.js" async></script>
 </head>
 <body>
     <header>
-        <div id="myNavBar" class="topnav">
-            <nav>
-                <a href="index.html">
-                    <img class="logo"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/1200px-MarvelLogo.svg.png"
-                            alt="Imagem Marvel">
-                </a>
-                <a class="topnav-button" href="comics.html">Comics</a>
-                <a class="topnav-button" href="artbooks.html">ArtBooks</a>
-                <a class="topnav-button" href="trailers.html">Trailers</a>
-                <a class="topnav-button" href="about.html">About Us</a>
-                <a href="javascript:void(0);" class="icon" onclick="responseNavBar()">
-                  <i class="fa fa-bars"></i>
-                </a>
+        <div>
+            <nav id="myNavBar" class="topnav">
+                <div id="navButtons">
+                    <a href="index.html">
+                        <img class="logo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/1200px-MarvelLogo.svg.png"
+                                alt="Imagem Marvel">
+                    </a>
+                    <a class="topnav-button" href="comics.html">Comics</a>
+                    <a class="topnav-button" href="artbooks.html">ArtBooks</a>
+                    <a class="topnav-button" href="trailers.html">Trailers</a>
+                    <a class="topnav-button" href="about.html">About Us</a>
+                    <a href="javascript:void(0);" class="listIcon" onclick="navDropdown()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </nav>
+            <div id="dropdown" style="display:none;">
+                <a class="topnav-button" href="comics.html">Comics</a><br>
+                <a class="topnav-button" href="artbooks.html">ArtBooks</a><br>
+                <a class="topnav-button" href="trailers.html">Trailers</a><br>
+                <a class="topnav-button" href="about.html">About Us</a><br>
+            </div>
         </div>
     </header>
     <div style="height:70px;"></div>
 
-    <div>
-        <img src="https://imgix.ranker.com/user_node_img/50032/1000624444/original/the-infinity-gauntlet-comic-book-series-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces"
-            alt=""
-            width="100px">
+    <div class="comics-container">   
+        <ul id="comics-container" style="left:0;">
+            <li style="left: 0px;">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/cmx-images-prod/Item/15730/15730._SX1280_QL80_TTD_.jpg"
+                    alt="Infinity Gauntlet (1991)">
+            </li>
+            <li style="left: 300px;">
+                <img src="https://i.annihil.us/u/prod/marvel/i/mg/6/70/51647213d5fdf/clean.jpg"
+                    alt="Indestructible Hulk (2012) #1">
+            </li>
+            <li style="left: 600px;">
+                <img src="https://i.annihil.us/u/prod/marvel/i/mg/a/50/5ccb1de977967/clean.jpg" 
+                    alt="League of Legends: Lux (2019) #1">
+            </li>
+            <li style="left: 900px;">
+                <img src="https://i.annihil.us/u/prod/marvel/i/mg/f/b0/5afc7ec776ea2/clean.jpg" 
+                    alt="Black Panther (2018) #1">
+            </li>
+            <li style="left: 1200px;">
+                <img src="https://i.annihil.us/u/prod/marvel/i/mg/8/c0/5603ffa00e4f1/clean.jpg" 
+                    alt="Jessica Jones (2017) #1">
+            </li>
+            <li style="left: 1550px;">
+                <img alt="League of Legends: Lux (2019) #1">
+            </li>
+            <li style="left: 1800px;">
+                <img alt="League of Legends: Lux (2019) #1">
+            </li>
+        </ul>
     </div>
+
+    <button onclick="buttonNext()">Clique</button>
+
+
 </body>
 </html>
