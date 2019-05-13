@@ -2,9 +2,10 @@
 
 /* Trailers */
 .trailer-container{
+    position: relative;
     text-align:center;
     width: 720px;
-    margin: 0 auto;
+    margin: auto auto;
 }
 
 .trailer-container iframe {

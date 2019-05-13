@@ -1,14 +1,27 @@
 @import "index.css";
 
-.comics-container{
-    width: 90%;
-    overflow: hidden;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+ul{
+    padding: 0px 20px;
+    position: relative;
+    height: 400px;
+    width: 7200px;
+    background-color:rgba(49, 47, 47, 0.6);
+    transition: all 1s;
+    margin: 0px;
 }
 
+#comics-list{
+    width: 7200px;
+    position: relative;
+    overflow: hidden;
+    margin: 100px;
+    margin-top: 100px; margin-bottom: 100px;
+}
+
+.comics-container{
+    width:1250px;
+    overflow: hidden;
+}
 .comics-container img{
     height: 350px;
     width: 230px;
@@ -31,11 +44,36 @@
     float: left;
 }
 
-ul{
-    padding: 0px 20px;
-    position: relative;
-    height: 400px;
-    width: 7200px;
-    background-color:rgba(49, 47, 47, 0.6);
-    transition: all 1s;
+.comics-slider-button{
+    display: inline-block;
+    padding: 50px 10px;
+    position: absolute;
+    font-size: 50px;
+    border: 2px solid rgb(237, 29, 36);
+    border-radius: 10px;
+    background-color: rgb(237, 29, 36);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
+.comics-slider-button:hover{
+    background-color: rgb(237, 29, 36);
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+}
+.comics-slider-button:active{
+    border: 2px solid white;
+    color: white;
+    border:transparent;
+    
+}
+.comics-slider-button.previous {
+    margin-top: 225px;
+    z-index: 9;
+}
+.comics-slider-button.next {
+    margin-top: 225px;
+    z-index: 9;
+}
+

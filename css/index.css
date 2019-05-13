@@ -86,7 +86,7 @@ body{
 .topnav-button:hover {
     color: white;
     font-size: 33px;
-    padding: 7px 23px;
+    padding: 8px 22.5px;
     border: 3px solid transparent;
     text-decoration: none;
 }
@@ -103,18 +103,16 @@ body{
 
 /* CSS Slideshow */
 .slider-container{
+    position: relative;
     width: 1000px;
     height: 500px;
-    margin-left: 200px;
-    margin-right: auto;
+    margin: auto auto;
     overflow: hidden;
     text-align: center;
     border: 3px solid black;
 }
 
 .image-container{
-    height: 500px;
-    left: 0px;
     position: relative;
     transition: 1.5s;
     -webkit-transition:1.5s;
@@ -131,7 +129,7 @@ body{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 3px;
     text-decoration: none;
     display: inline-block;
@@ -139,16 +137,16 @@ body{
     position: absolute;
 }
 .slideshow-button:hover{
-    background-color: #ddd;
+    background-color: rgb(187, 9, 15);
     color: black;
+    text-decoration: none;
+    border: 2px solid black;
 }
 .slideshow-button.previous {
-    left: 170px;
     margin-top: 225px;
     z-index: 9;
 }
 .slideshow-button.next {
-    left: 1180px;
     margin-top: 225px;
     z-index: 9;
 }
