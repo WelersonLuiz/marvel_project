@@ -32,8 +32,6 @@
 .artbook button:hover{
     background-color: rgb(237, 29, 36);
     border: rgb(237, 29, 36);
-    margin-top: 20px;
-    box-shadow: 1px 1px #444444;
 }
 
 .artbook button .disabled-button{

@@ -1,5 +1,5 @@
 body{
-    background-image: url("https://imgc.allpostersimages.com/img/print/posters/marvel-comics-retro-background_a-G-13757638-4985788.jpg");
+    background-image: url("D:/Workspace/Pessoal/marvel_project/assets/background.jpg");
     position: static;
 }
 
@@ -129,7 +129,7 @@ body{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 3px;
     text-decoration: none;
     display: inline-block;
